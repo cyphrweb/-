@@ -534,6 +534,30 @@ nav.scrolled::after{opacity:1}
 .pass-note-icon{font-size:1.4rem;flex-shrink:0}
 .pass-note-text{font-family:'Space Mono',monospace;font-size:.62rem;letter-spacing:.1em;color:rgba(255,230,150,.85);line-height:1.85;text-transform:uppercase}
 .pass-note-text strong{color:var(--gd)}
+/* ALL-IN-ONE PASS SPECIAL STYLING */
+.pass-card.combo{border-color:rgba(255,165,0,.35);position:relative}
+.pass-card.combo::before{background:linear-gradient(90deg,var(--gd),var(--pk),var(--pu),var(--bl),var(--grn));background-size:200%;animation:barscroll 3s linear infinite}
+.pass-card.combo:hover{border-color:rgba(255,165,0,.65);box-shadow:0 22px 55px rgba(255,165,0,.12)}
+.pass-card.combo .pass-name{background:linear-gradient(135deg,var(--gd),var(--pk),var(--pu));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.pass-card.combo .pass-price{background:linear-gradient(135deg,var(--gd),#ff9900);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:none}
+.pass-card.combo .pass-features li::before{color:var(--gd)}
+.pass-card.combo .pass-cta{background:linear-gradient(135deg,var(--gd),var(--pk),var(--pu));background-size:200%;animation:barscroll 3s linear infinite}
+.pass-card.combo .pass-cta:hover{box-shadow:0 10px 30px rgba(255,165,0,.4)}
+.combo-included{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.combo-badge{font-family:'Space Mono',monospace;font-size:.52rem;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border:1px solid;border-radius:1px}
+.cb-game{background:rgba(255,215,0,.08);border-color:rgba(255,215,0,.35);color:var(--gd)}
+.cb-fun{background:rgba(123,47,255,.08);border-color:rgba(123,47,255,.35);color:#a060ff}
+.cb-learn{background:rgba(0,255,157,.06);border-color:rgba(0,255,157,.3);color:var(--grn)}
+.combo-savings{font-family:'Space Mono',monospace;font-size:.58rem;letter-spacing:.1em;color:var(--grn);text-transform:uppercase;margin-bottom:4px}
+.combo-savings span{text-decoration:line-through;color:var(--dim);margin-left:6px}
+.passes-grid-wide{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+/* COMBO ROW — full width standalone card below the grid */
+.combo-pass-row{margin-top:24px}
+.pass-card.combo.full-row{display:grid;grid-template-columns:auto 1fr auto;gap:32px;align-items:center;padding:32px 36px}
+.pass-card.combo.full-row .pass-left{display:flex;flex-direction:column;align-items:center;text-align:center;min-width:140px}
+.pass-card.combo.full-row .pass-mid ul{columns:2;gap:20px}
+.pass-card.combo.full-row .pass-right{display:flex;flex-direction:column;align-items:center;gap:14px;min-width:180px}
+@media(max-width:768px){.pass-card.combo.full-row{grid-template-columns:1fr;text-align:center}.pass-card.combo.full-row .pass-mid ul{columns:1}.pass-card.combo.full-row .pass-right{width:100%}.pass-card.combo.full-row .pass-left{flex-direction:row;justify-content:center;gap:16px;flex-wrap:wrap}}
 @media(max-width:600px){.passes-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:420px){.passes-grid{grid-template-columns:1fr}}
 
@@ -876,6 +900,60 @@ footer{background:linear-gradient(180deg,transparent,rgba(255,45,120,.03))}
       <a href="https://forms.gle/uf2Auhp5KgkFNQgWA" target="_blank" class="pass-cta">Get Learning Pass — ₹79</a>
     </div>
 
+  </div>
+
+  <!-- ALL-IN-ONE COMBO PASS — full width -->
+  <div class="combo-pass-row reveal">
+    <div class="pass-card combo full-row">
+      <!-- LEFT: name + price -->
+      <div class="pass-left">
+        <div style="font-size:2.6rem;margin-bottom:8px">🎟️</div>
+        <div>
+          <div class="pass-name" style="font-size:2rem;line-height:1.05">All-In-One<br>Pass</div>
+          <div class="pass-tagline" style="margin-top:6px;margin-bottom:10px">Games + Fun + Learning</div>
+          <div class="combo-included">
+            <span class="combo-badge cb-game">🎮 Game ₹49</span>
+            <span class="combo-badge cb-fun">🎤 Fun ₹29</span>
+            <span class="combo-badge cb-learn">📡 Learning ₹79</span>
+          </div>
+          <div class="combo-savings">You save ₹28 &nbsp;<span>₹157</span></div>
+          <div class="pass-price-row" style="justify-content:center">
+            <div class="pass-price" style="font-size:3.2rem">₹129</div>
+            <div class="pass-per">only</div>
+          </div>
+          <span class="pass-recommended" style="position:static;display:inline-block;margin-top:6px">🔥 Best Value</span>
+        </div>
+      </div>
+      <!-- MID: features -->
+      <div class="pass-mid">
+        <div class="pass-divider"></div>
+        <ul class="pass-features" style="columns:2;gap:16px;margin-bottom:0">
+          <li><strong>Startup Pitch Battle</strong></li>
+          <li><strong>Build in 15 Minutes</strong></li>
+          <li><strong>Fastest Googler</strong></li>
+          <li><strong>AI Prompt Battle</strong></li>
+          <li><strong>Meme Battle</strong></li>
+          <li><strong>Roast My Startup</strong></li>
+          <li><strong>Talent Night &amp; Open Mic</strong></li>
+          <li><strong>Stand-Up Comedy &amp; Mimicry</strong></li>
+          <li><strong>Singing, Rap &amp; Icebreakers</strong></li>
+          <li><strong>Late Night Chill VC</strong></li>
+          <li><strong>Public Networking Rooms</strong></li>
+          <li><strong>Live Coding Access</strong></li>
+          <li><strong>Watch Top Teams Build</strong></li>
+          <li><strong>Learn AI Tools Live</strong></li>
+          <li><strong>Watch Final Rounds &amp; Sprints</strong></li>
+          <li>Observe Real Builder Workflows</li>
+        </ul>
+        <div class="pass-divider" style="margin-top:16px;margin-bottom:0"></div>
+      </div>
+      <!-- RIGHT: CTA -->
+      <div class="pass-right">
+        <div style="font-family:'Space Mono',monospace;font-size:.58rem;letter-spacing:.12em;color:var(--dim);text-transform:uppercase;text-align:center;line-height:1.8">Access Dates<br><span style="color:var(--gd)">25, 26, 27 July<br>&amp; 1 Aug 2026</span></div>
+        <a href="https://forms.gle/uf2Auhp5KgkFNQgWA" target="_blank" class="pass-cta" style="width:100%;text-align:center">Get All-In-One — ₹129 →</a>
+        <div style="font-family:'Space Mono',monospace;font-size:.55rem;letter-spacing:.1em;color:var(--dim);text-align:center;line-height:1.7;text-transform:uppercase">Not competing in the hackathon?<br>This is your <span style="color:var(--grn)">perfect pass</span>.</div>
+      </div>
+    </div>
   </div>
 
   <div class="pass-note reveal">
