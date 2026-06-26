@@ -479,6 +479,64 @@ nav.scrolled::after{opacity:1}
 .nav-links a.active::after{width:100%}
 
 
+/* PASSES SECTION */
+.passes-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;margin-top:8px}
+.pass-card{background:var(--card);border:1px solid rgba(255,255,255,.08);padding:32px 24px;position:relative;overflow:hidden;transition:transform .35s,box-shadow .35s,border-color .3s;cursor:default;display:flex;flex-direction:column}
+.pass-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.pass-card.participant::before{background:linear-gradient(90deg,var(--pk),var(--pu))}
+.pass-card.game::before{background:linear-gradient(90deg,var(--gd),#ff9900)}
+.pass-card.fun::before{background:linear-gradient(90deg,var(--pu),var(--bl))}
+.pass-card.learning::before{background:linear-gradient(90deg,var(--grn),var(--bl))}
+.pass-card.participant{border-color:rgba(255,45,120,.28)}
+.pass-card.game{border-color:rgba(255,215,0,.22)}
+.pass-card.fun{border-color:rgba(123,47,255,.22)}
+.pass-card.learning{border-color:rgba(0,255,157,.2)}
+.pass-card:hover{transform:translateY(-8px);box-shadow:0 22px 55px rgba(0,0,0,.18)}
+.pass-card.participant:hover{border-color:rgba(255,45,120,.5);box-shadow:0 22px 55px rgba(255,45,120,.1)}
+.pass-card.game:hover{border-color:rgba(255,215,0,.5);box-shadow:0 22px 55px rgba(255,215,0,.08)}
+.pass-card.fun:hover{border-color:rgba(123,47,255,.5);box-shadow:0 22px 55px rgba(123,47,255,.1)}
+.pass-card.learning:hover{border-color:rgba(0,255,157,.4);box-shadow:0 22px 55px rgba(0,255,157,.07)}
+.pass-recommended{position:absolute;top:14px;right:14px;font-family:'Space Mono',monospace;font-size:.5rem;letter-spacing:.15em;text-transform:uppercase;padding:4px 10px;background:linear-gradient(135deg,var(--pk),var(--pu));color:#fff}
+.pass-icon{font-size:2.2rem;margin-bottom:12px;display:block}
+.pass-name{font-family:'Bebas Neue',sans-serif;font-size:1.65rem;letter-spacing:.06em;line-height:1;margin-bottom:6px}
+.pass-card.participant .pass-name{color:#fff}
+.pass-card.game .pass-name{color:var(--gd)}
+.pass-card.fun .pass-name{background:linear-gradient(135deg,#a060ff,var(--bl));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.pass-card.learning .pass-name{color:var(--grn)}
+.pass-tagline{font-family:'Space Mono',monospace;font-size:.58rem;letter-spacing:.12em;color:var(--dim);text-transform:uppercase;margin-bottom:20px}
+.pass-price-row{display:flex;align-items:baseline;gap:8px;margin-bottom:20px}
+.pass-price{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;line-height:1}
+.pass-card.participant .pass-price{color:var(--pk);filter:drop-shadow(0 0 8px rgba(255,45,120,.4))}
+.pass-card.game .pass-price{color:var(--gd);filter:drop-shadow(0 0 8px rgba(255,215,0,.4))}
+.pass-card.fun .pass-price{color:#a060ff;filter:drop-shadow(0 0 8px rgba(123,47,255,.4))}
+.pass-card.learning .pass-price{color:var(--grn);filter:drop-shadow(0 0 8px rgba(0,255,157,.35))}
+.pass-per{font-family:'Space Mono',monospace;font-size:.6rem;color:var(--dim);letter-spacing:.1em;text-transform:uppercase}
+.pass-divider{width:100%;height:1px;background:rgba(255,255,255,.06);margin-bottom:18px}
+.pass-features{list-style:none;flex:1;margin-bottom:22px}
+.pass-features li{font-family:'Rajdhani',sans-serif;font-size:.92rem;color:var(--dim);padding:5px 0;border-bottom:1px solid rgba(255,255,255,.04);display:flex;align-items:flex-start;gap:8px;line-height:1.4}
+.pass-features li::before{content:'→';flex-shrink:0;margin-top:1px}
+.pass-card.participant .pass-features li::before{color:var(--pk)}
+.pass-card.game .pass-features li::before{color:var(--gd)}
+.pass-card.fun .pass-features li::before{color:#a060ff}
+.pass-card.learning .pass-features li::before{color:var(--grn)}
+.pass-features li strong{color:rgba(220,220,240,.9)}
+.pass-cta{display:block;text-align:center;font-family:'Space Mono',monospace;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:#fff;text-decoration:none;padding:13px 20px;border:none;cursor:pointer;clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%);transition:filter .25s,transform .2s,box-shadow .25s;margin-top:auto}
+.pass-card.participant .pass-cta{background:linear-gradient(135deg,var(--pk),var(--pu))}
+.pass-card.game .pass-cta{background:linear-gradient(135deg,#ff9900,var(--gd))}
+.pass-card.fun .pass-cta{background:linear-gradient(135deg,var(--pu),var(--bl))}
+.pass-card.learning .pass-cta{background:linear-gradient(135deg,var(--grn),var(--bl))}
+.pass-cta:hover{filter:brightness(1.18);transform:translateY(-3px)}
+.pass-card.participant .pass-cta:hover{box-shadow:0 10px 30px rgba(255,45,120,.4)}
+.pass-card.game .pass-cta:hover{box-shadow:0 10px 30px rgba(255,215,0,.3)}
+.pass-card.fun .pass-cta:hover{box-shadow:0 10px 30px rgba(123,47,255,.35)}
+.pass-card.learning .pass-cta:hover{box-shadow:0 10px 30px rgba(0,255,157,.25)}
+.pass-note{margin-top:40px;background:rgba(255,215,0,.04);border:1px solid rgba(255,215,0,.2);padding:18px 24px;display:flex;gap:14px;align-items:flex-start}
+.pass-note-icon{font-size:1.4rem;flex-shrink:0}
+.pass-note-text{font-family:'Space Mono',monospace;font-size:.62rem;letter-spacing:.1em;color:rgba(255,230,150,.85);line-height:1.85;text-transform:uppercase}
+.pass-note-text strong{color:var(--gd)}
+@media(max-width:600px){.passes-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:420px){.passes-grid{grid-template-columns:1fr}}
+
 /* EXAM NOTICE BAR */
 .exam-notice-bar{
   position:relative;z-index:202;
@@ -568,6 +626,7 @@ footer{background:linear-gradient(180deg,transparent,rgba(255,45,120,.03))}
     <li><a href="#prizes">Prizes</a></li>
     <li><a href="#why">Why Join</a></li>
     <li><a href="#webxy" style="color:var(--pk)">Vector.ioST (student initiative)</a></li>
+    <li><a href="#passes">Passes</a></li>
     <li><a href="#register">Register</a></li>
     <li><a href="#organizers">Team</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -712,6 +771,120 @@ footer{background:linear-gradient(180deg,transparent,rgba(255,45,120,.03))}
 <div class="div"></div>
 
 
+
+<div class="div"></div>
+
+<!-- PASSES -->
+<section id="passes">
+  <div class="reveal">
+    <p class="sec-label">Access Options</p>
+    <h2 class="sec-title">Choose Your Pass</h2>
+  </div>
+  <div class="passes-grid reveal">
+
+    <!-- PARTICIPANT PASS -->
+    <div class="pass-card participant">
+      <span class="pass-recommended">⭐ Recommended</span>
+      <span class="pass-icon">🚀</span>
+      <div class="pass-name">Participant Pass</div>
+      <div class="pass-tagline">Full Hackathon Experience</div>
+      <div class="pass-price-row">
+        <div class="pass-price">₹199</div>
+        <div class="pass-per">per team</div>
+      </div>
+      <div class="pass-divider"></div>
+      <ul class="pass-features">
+        <li><strong>Full hackathon access</strong> — all rounds</li>
+        <li>Compete for <strong>₹10,000 prize pool</strong></li>
+        <li>All game sessions included</li>
+        <li>All fun &amp; networking sessions</li>
+        <li>Live coding access — watch others build</li>
+        <li>Special Discord roles</li>
+        <li>E-Certificate of Participation</li>
+        <li>Exciting rewards &amp; surprises</li>
+        <li>Internship interview opportunity (Top 10)</li>
+      </ul>
+      <a href="https://forms.gle/uf2Auhp5KgkFNQgWA" target="_blank" class="pass-cta">Register Team — ₹299 <span style="font-size:.65em;opacity:.8">(+ ₹100 late fee)</span></a>
+    </div>
+
+    <!-- GAME PASS -->
+    <div class="pass-card game">
+      <span class="pass-icon">🎮</span>
+      <div class="pass-name">Game Pass</div>
+      <div class="pass-tagline">Fun Games · Real Competition</div>
+      <div class="pass-price-row">
+        <div class="pass-price">₹49</div>
+        <div class="pass-per">only</div>
+      </div>
+      <div class="pass-divider"></div>
+      <ul class="pass-features">
+        <li><strong>Startup Pitch Battle</strong> — 60-second pitches</li>
+        <li><strong>Build in 15 Minutes</strong> — speed builds</li>
+        <li><strong>Fastest Googler</strong> — tech trivia race</li>
+        <li><strong>AI Prompt Battle</strong> — creative prompting</li>
+        <li><strong>Meme Battle</strong> — funniest meme wins</li>
+        <li><strong>Roast My Startup</strong> — brutal &amp; hilarious feedback</li>
+        <li>Access to all game activities</li>
+      </ul>
+      <a href="https://forms.gle/uf2Auhp5KgkFNQgWA" target="_blank" class="pass-cta">Get Game Pass — ₹49</a>
+    </div>
+
+    <!-- FUN & NETWORKING PASS -->
+    <div class="pass-card fun">
+      <span class="pass-icon">🎤</span>
+      <div class="pass-name">Fun &amp; Networking</div>
+      <div class="pass-tagline">Network · Chill · Connect · Have Fun</div>
+      <div class="pass-price-row">
+        <div class="pass-price">₹29</div>
+        <div class="pass-per">only</div>
+      </div>
+      <div class="pass-divider"></div>
+      <ul class="pass-features">
+        <li><strong>Talent Night</strong> — sing, dance, perform</li>
+        <li><strong>Stand-Up Comedy &amp; Mimicry Battle</strong></li>
+        <li><strong>Singing &amp; Rap</strong> — stage is yours</li>
+        <li><strong>Icebreaker Games</strong> — meet everyone</li>
+        <li><strong>Meme Review &amp; Open Mic</strong></li>
+        <li><strong>Late Night Chill VC</strong></li>
+        <li>Storytelling, Fun Quiz &amp; Rapid Fire</li>
+        <li>Funny College Stories &amp; Creator Spotlight</li>
+        <li>Public networking rooms</li>
+      </ul>
+      <a href="https://forms.gle/uf2Auhp5KgkFNQgWA" target="_blank" class="pass-cta">Get Fun Pass — ₹29</a>
+    </div>
+
+    <!-- STARTUP LEARNING PASS -->
+    <div class="pass-card learning">
+      <span class="pass-icon">📡</span>
+      <div class="pass-name">Startup Learning</div>
+      <div class="pass-tagline">Watch · Learn · Grow</div>
+      <div class="pass-price-row">
+        <div class="pass-price">₹79</div>
+        <div class="pass-per">only</div>
+      </div>
+      <div class="pass-divider"></div>
+      <ul class="pass-features">
+        <li><strong>Live coding access</strong> — all sessions</li>
+        <li><strong>Watch top teams build</strong> from scratch</li>
+        <li><strong>Learn AI tools</strong> in real projects</li>
+        <li><strong>Understand real startup execution</strong></li>
+        <li><strong>Watch final rounds, sprints &amp; winner announcements</strong></li>
+        <li>Public networking access</li>
+        <li>Observe real builder workflows</li>
+        <li>100% online learning experience</li>
+      </ul>
+      <a href="https://forms.gle/uf2Auhp5KgkFNQgWA" target="_blank" class="pass-cta">Get Learning Pass — ₹79</a>
+    </div>
+
+  </div>
+
+  <div class="pass-note reveal">
+    <span class="pass-note-icon">⚠️</span>
+    <div class="pass-note-text">
+      <strong>Note:</strong> All game sessions, fun &amp; networking, and live learning access are <strong>already included</strong> in the <strong>Participant Pass (₹199)</strong>. Individual passes are for those who want specific access without participating in the hackathon itself. We <strong>highly recommend</strong> the Participant Pass for the complete CyphrWeb experience! 🚀
+    </div>
+  </div>
+</section>
 
 <div class="div"></div>
 
