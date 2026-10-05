@@ -1,0 +1,47 @@
+/* ===== CyphrWeb enhance layer: interactivity + polish ===== */
+.progress{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:var(--accent-grad);z-index:200;pointer-events:none}
+.hero{position:relative}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(520px circle at var(--mx,70%) var(--my,30%),rgba(139,108,240,.20),transparent 60%)}
+.hero__grid{position:relative;z-index:1}
+.hero__headline{background:linear-gradient(100deg,var(--text) 30%,#f7a8d0 55%,#b9a6ff 75%,var(--text));background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sheen 7s var(--ease) 1 .4s both}
+@keyframes sheen{from{background-position:100% 0}to{background-position:0 0}}
+.card{position:relative;transition:transform .25s var(--ease),border-color .25s}
+.card:hover{transform:translateY(-3px);border-color:var(--accent-line);background-image:radial-gradient(260px circle at var(--cx,50%) var(--cy,0%),rgba(234,76,151,.13),transparent 65%)}
+.btn{transition:transform .2s var(--ease),box-shadow .2s}
+.btn--primary:hover{box-shadow:0 8px 28px rgba(234,76,151,.35)}
+
+/* hero graph */
+.node{cursor:pointer}.node circle{transition:r .2s}
+.node:hover circle,.node.is-on circle{r:11;fill:var(--accent)}
+.node.is-on circle{filter:drop-shadow(0 0 8px var(--accent))}
+.node-tip{margin:10px auto 0;max-width:340px;padding:12px 16px;border:1px solid var(--border-strong);border-radius:var(--radius);background:var(--surface);font-size:.92rem;color:var(--text-muted);min-height:3.4em}
+.node-tip b{color:var(--text);font-family:var(--font-display)}
+
+/* how it works */
+.how{background:var(--bg-alt)}
+.how__roles{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0}
+.how__role{font:inherit;color:var(--text-muted);background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:10px 18px;cursor:pointer;transition:.2s var(--ease)}
+.how__role:hover{color:var(--text);border-color:var(--accent-line)}
+.how__role[aria-selected="true"]{color:#fff;background:var(--accent-grad);border-color:transparent;transform:scale(1.04)}
+.how__panel{display:grid;grid-template-columns:1.3fr 1fr;gap:28px;padding:28px;border:1px solid var(--border-strong);border-radius:var(--radius);background:var(--surface)}
+.how__panel h3{font-family:var(--font-display);font-size:1.5rem;margin:0 0 6px}
+.how__panel p{color:var(--text-muted);margin:0 0 18px}
+.how__steps{list-style:none;margin:0;padding:0;position:relative;display:grid;gap:14px}
+.how__steps::before{content:"";position:absolute;left:15px;top:8px;bottom:8px;width:2px;background:var(--border-strong)}
+.how__steps li{position:relative;padding-left:44px;animation:stepin .45s var(--ease) both;animation-delay:calc(var(--i)*110ms)}
+.how__steps li::before{content:attr(data-n);position:absolute;left:0;top:-2px;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:var(--accent-soft);border:1px solid var(--accent-line);font-family:var(--font-display);font-size:.85rem}
+@keyframes stepin{from{opacity:0;transform:translateX(-10px)}to{opacity:1;transform:none}}
+.how__get{border-left:1px solid var(--border);padding-left:28px;display:flex;flex-direction:column;gap:10px;justify-content:center}
+.how__get span{display:block;padding:10px 14px;border-radius:var(--radius-sm);background:var(--surface-2);font-size:.95rem}
+.how__panel .btn{align-self:flex-start;margin-top:8px}
+
+/* journey */
+.journey__step{cursor:pointer;transition:transform .2s var(--ease),border-color .2s}
+.journey__step:hover{transform:translateY(-4px)}
+.journey__step.is-on{border-color:var(--accent);background-image:var(--accent-grad);background-clip:padding-box}
+.journey__step.is-on .journey__label,.journey__step.is-on .journey__num{color:#fff}
+.journey-detail{margin:18px 0 8px;padding:18px 22px;border-left:3px solid var(--accent);background:var(--surface);border-radius:0 var(--radius) var(--radius) 0;transition:opacity .2s}
+.journey-detail b{font-family:var(--font-display);display:block;margin-bottom:4px}
+.journey-detail span{color:var(--text-muted)}
+@media(max-width:760px){.how__panel{grid-template-columns:1fr}.how__get{border-left:0;padding-left:0}}
+@media(prefers-reduced-motion:reduce){.hero__headline,.how__steps li{animation:none}.card:hover,.journey__step:hover{transform:none}}

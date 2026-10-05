@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CyphrWeb — A Startup Community & Growth Ecosystem</title>
+<meta name="description" content="CyphrWeb is a startup community and growth ecosystem connecting students, founders, developers, designers, marketers, experts and investors — from idea to scale.">
+<meta property="og:title" content="CyphrWeb — Where Ideas Meet People, Resources & Opportunity">
+<meta property="og:description" content="A startup community and growth ecosystem built to connect, create and grow. You don't need a startup idea to join.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cyphrweb.in/">
+<meta property="og:image" content="https://cyphrweb.in/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://cyphrweb.in/og-image.png">
+<meta name="theme-color" content="#0a0b0d">
+<meta name="robots" content="index, follow">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CyphrWeb — A Startup Community & Growth Ecosystem">
+<meta name="twitter:description" content="A startup community and growth ecosystem connecting students, founders, developers, designers, marketers, experts and investors.">
+<!-- Update this to your live domain once deployed, so search engines don't treat www vs non-www / http vs https as duplicate pages -->
+<link rel="canonical" href="https://cyphrweb.in/">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="cyphrweb-mark.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "CyphrWeb",
+  "url": "https://cyphrweb.in/",
+  "logo": "https://cyphrweb.in/apple-touch-icon.png",
+  "description": "CyphrWeb is a startup community and growth ecosystem connecting students, founders, developers, designers, marketers, experts and investors.",
+  "founder": [
+    { "@type": "Person", "name": "Tejas Naiknaware" },
+    { "@type": "Person", "name": "Sandesh Shingankar" }
+  ],
+  "sameAs": []
+}
+</script>
+<!-- Analytics: replace YOUR-DOMAIN.COM with your live domain and uncomment to enable Plausible (privacy-friendly, no cookie banner needed).
+<script defer data-domain="YOUR-DOMAIN.COM" src="https://plausible.io/js/script.js"></script>
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="enhance.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner container">
+    <a href="#top" class="navbar__logo">
+      <img src="cyphrweb-mark.png" alt="" class="navbar__logo-mark">
+      <span>CyphrWeb</span>
+    </a>
+
+    <nav class="navbar__nav" id="primaryNav" aria-label="Primary">
+      <a href="#top">Home</a>
+      <a href="#community">Community</a>
+      <a href="#startups">For Startups</a>
+      <a href="#experts">Experts</a>
+      <a href="#directory">Directory</a>
+      <a href="#products">Products</a>
+      <a href="#events">Events</a>
+      <a href="#careers">Careers</a>
+      <a href="#vision">About</a>
+    </nav>
+
+    <a class="btn btn--primary navbar__cta" href="https://chat.whatsapp.com/FMRIkeHuOK45pKjLTabjZZ" target="_blank" rel="noopener">Join Community</a>
+
+    <button class="navbar__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ 2. HERO ============ -->
+<section class="hero" id="top">
+  <div class="container hero__grid">
+    <div class="hero__content reveal">
+      <h1 class="hero__headline">Where ideas meet people, resources &amp; opportunity.</h1>
+      <p class="hero__sub">A startup community and growth ecosystem for people who want to learn, connect, build and grow.</p>
+      <p class="hero__note">You don't need a startup idea to start your journey.</p>
+      <div class="hero__actions">
+        <a href="https://chat.whatsapp.com/FMRIkeHuOK45pKjLTabjZZ" target="_blank" rel="noopener" class="btn btn--primary">Join the Community</a>
+        <a href="#startups" class="btn btn--ghost">Build With CyphrWeb</a>
+      </div>
+    </div>
+
+    <div class="hero__visual reveal" aria-hidden="true">
+      <svg class="node-graph" viewBox="0 0 460 460" role="img" aria-label="Network connecting students, founders, experts, developers, marketers and investors">
+        <g class="node-graph__lines" id="nodeLines"></g>
+        <g class="node-graph__nodes" id="nodeDots">
+          <g class="node" data-label="Students" style="--x:80; --y:90;"><circle r="6"/></g>
+          <g class="node" data-label="Founders" style="--x:360; --y:70;"><circle r="6"/></g>
+          <g class="node" data-label="Developers" style="--x:60; --y:260;"><circle r="6"/></g>
+          <g class="node" data-label="Experts" style="--x:400; --y:250;"><circle r="6"/></g>
+          <g class="node" data-label="Marketers" style="--x:120; --y:400;"><circle r="6"/></g>
+          <g class="node" data-label="Investors" style="--x:340; --y:400;"><circle r="6"/></g>
+          <g class="node node--center" data-label="CyphrWeb" style="--x:230; --y:230;"><circle r="10"/></g>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section__head">
+      <h2>What is CyphrWeb?</h2>
+      <p class="section__lede">CyphrWeb is building a community and ecosystem that connects aspiring entrepreneurs, students, founders, developers, marketers, experts and investors. We want to make it easier for people to find the right people, knowledge, resources and opportunities to turn ideas into real-world products and startups.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card">
+        <h3>Connect</h3>
+        <p>Meet people who want to build.</p>
+      </div>
+      <div class="card">
+        <h3>Collaborate</h3>
+        <p>Find teammates and work together.</p>
+      </div>
+      <div class="card">
+        <h3>Build</h3>
+        <p>Turn ideas and problems into real products.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3b. TRACTION & TEAM ============ -->
+<section class="section" id="traction">
+  <div class="container">
+    <div class="section__head">
+      <h2>Not just an idea. A working ecosystem.</h2>
+      <p class="section__lede">CyphrWeb already has real startups, a real team and real backing behind it — built by students, for students.</p>
+    </div>
+
+    <div class="stat-grid">
+      <div class="stat">
+        <span class="stat__num" data-stat="startups">10+</span>
+        <span class="stat__label">Startups registered with CyphrWeb</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-stat="revenue">2</span>
+        <span class="stat__label">Already generating revenue</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-stat="mentors">20+</span>
+        <span class="stat__label">Expert mentors guiding the community</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-stat="investors">5+</span>
+        <span class="stat__label">Angel investors backing our startups</span>
+      </div>
+    </div>
+
+    <div class="grid-3 traction-detail" id="tractionGrid"><noscript><p class="fineprint">Enable JavaScript to see more details, or <a href="https://chat.whatsapp.com/FMRIkeHuOK45pKjLTabjZZ" target="_blank" rel="noopener">join the community</a> to ask us directly.</p></noscript></div>
+
+    <p class="fineprint traction-founders">Co-founded by Tejas Naiknaware and Sandesh Shingankar.</p>
+  </div>
+</section>
+
+
+<!-- ============ 4. COMMUNITY ============ -->
+<section class="section section--alt" id="community">
+  <div class="container community__layout">
+    <div class="reveal">
+      <h2>More than a community. A place to start.</h2>
+      <p class="highlight">You don't need a startup idea to join.</p>
+      <p>Whether you want to learn, find a team, explore startups, develop your skills, meet ambitious people or build something new — you are welcome here.</p>
+      <a href="https://chat.whatsapp.com/FMRIkeHuOK45pKjLTabjZZ" target="_blank" rel="noopener" class="btn btn--primary">Join CyphrWeb Community</a>
+    </div>
+
+    <ul class="tag-grid reveal" aria-label="Who is part of the community">
+      <li>Students</li>
+      <li>Founders</li>
+      <li>Developers</li>
+      <li>Designers</li>
+      <li>Marketers</li>
+      <li>Mentors</li>
+      <li>Experts</li>
+      <li>Investors</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 5. IDEA TO STARTUP JOURNEY ============ -->
+<section class="section" id="journey">
+  <div class="container">
+    <div class="section__head">
+      <h2>From zero to startup.</h2>
+      <p class="section__lede">Wherever you start, we start with you.</p>
+    </div>
+
+    <ol class="journey">
+      <li class="journey__step reveal"><span class="journey__num">01</span><span class="journey__label">Discover</span></li>
+      <li class="journey__step reveal"><span class="journey__num">02</span><span class="journey__label">Validate</span></li>
+      <li class="journey__step reveal"><span class="journey__num">03</span><span class="journey__label">Build</span></li>
+      <li class="journey__step reveal"><span class="journey__num">04</span><span class="journey__label">Launch</span></li>
+      <li class="journey__step reveal"><span class="journey__num">05</span><span class="journey__label">Grow</span></li>
+      <li class="journey__step reveal"><span class="journey__num">06</span><span class="journey__label">Scale</span></li>
+    </ol>
+
+    <div class="grid-4 stage-notes">
+      <div class="card card--quiet"><h4>No idea?</h4><p>Explore problems and opportunities.</p></div>
+      <div class="card card--quiet"><h4>Have an idea?</h4><p>Let's validate it.</p></div>
+      <div class="card card--quiet"><h4>Have an MVP?</h4><p>Let's improve and launch it.</p></div>
+      <div class="card card--quiet"><h4>Already growing?</h4><p>Let's work on traction and scale.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5b. FIND YOUR TEAM ============ -->
+<section class="section section--alt" id="find-team">
+  <div class="container find-team__layout">
+    <div class="reveal">
+      <h2>Find a team for your startup.</h2>
+      <p class="section__lede">Building alone is hard. Register as a founder looking for a co-founder, or as someone who wants to join a team — and get matched with people in the community.</p>
+
+      <div class="find-team__tabs" role="tablist" aria-label="Registration type">
+        <button class="find-team__tab is-active" type="button" data-role="founder" role="tab" aria-selected="true">I'm a Founder</button>
+        <button class="find-team__tab" type="button" data-role="joiner" role="tab" aria-selected="false">I want to join a team</button>
+      </div>
+
+      <form class="find-team__form" id="teamForm" novalidate>
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="form-row">
+          <label for="tf-name">Your name</label>
+          <input type="text" id="tf-name" name="name" required autocomplete="name">
+        </div>
+        <div class="form-row form-row--split">
+          <div>
+            <label for="tf-lookingfor" id="tf-lookingfor-label">Looking for</label>
+            <input type="text" id="tf-lookingfor" name="lookingFor" placeholder="e.g. Tech co-founder" required>
+          </div>
+          <div>
+            <label for="tf-skills">Your skills</label>
+            <input type="text" id="tf-skills" name="skills" placeholder="e.g. Frontend, marketing" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="tf-pitch">One line about what you're building or looking for</label>
+          <textarea id="tf-pitch" name="pitch" rows="2" placeholder="Keep it high-level — no need to share full details here." maxlength="160"></textarea>
+        </div>
+        <div class="form-row">
+          <label for="tf-contact">Contact (email or phone)</label>
+          <input type="text" id="tf-contact" name="contact" required autocomplete="email" placeholder="you@email.com or +91 98765 43210">
+        </div>
+        <button type="submit" class="btn btn--primary">Register &amp; Get Matched</button>
+        <p class="form-note" id="teamFormNote" role="status"></p>
+      </form>
+    </div>
+
+    <div class="reveal">
+      <h3 class="find-team__listheading">People looking right now</h3>
+      <ul class="find-team__list" id="teamList">
+        <li class="find-team__empty">No listings saved on this device yet. Register and your entry appears here.</li>
+      </ul>
+      <p class="fineprint">Your registration is also sent to the CyphrWeb team, who connect matches through the community. This list only shows entries saved on this device — share your listing in the community group so more people can see it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. WHAT CYPHRWEB BRINGS ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section__head">
+      <h2>More than advice. Real support.</h2>
+      <p class="section__lede">Tap a card to see what it actually looks like to work with us on that.</p>
+    </div>
+
+    <div class="grid-3 offer-grid" id="offerGrid"><noscript><p class="fineprint">CyphrWeb helps with strategy, expert guidance, technology, marketing, networking, investor introductions and growth. Enable JavaScript for details.</p></noscript></div>
+  </div>
+</section>
+
+<!-- ============ 7. STARTUP PARTNERSHIP ============ -->
+<section class="section section--alt" id="startups">
+  <div class="container partner__layout">
+    <div class="reveal">
+      <h2>We don't just advise. We partner.</h2>
+      <p>For startups we work closely with, CyphrWeb becomes a long-term growth partner — contributing expertise, resources, network, technology and marketing support in exchange for a fair, mutually agreed stake in what we help build.</p>
+      <p class="fineprint">Every partnership is discussed and agreed individually with the founding team. Nothing is fixed upfront, and there's no obligation until both sides are comfortable moving forward.</p>
+      <a href="#startup-form" class="btn btn--primary">Apply as a Startup</a>
+    </div>
+
+    <div class="partner-card reveal">
+      <h4>What that can look like</h4>
+      <ul class="partner-card__list">
+        <li>Hands-on help with strategy, tech and go-to-market</li>
+        <li>Access to CyphrWeb's network of experts and early investors</li>
+        <li>A partner who's invested in your outcome, not just advising from the side</li>
+      </ul>
+      <p class="partner-card__cta">Curious what this means for your startup specifically? Apply and we'll talk it through.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7b. INVESTOR NETWORK ============ -->
+<section class="section" id="investors">
+  <div class="container">
+    <div class="section__head">
+      <h2>Connect With the Right Network</h2>
+      <p class="section__lede">CyphrWeb works with angel investors who back startups in the ecosystem. Here's how an investor introduction actually happens.</p>
+    </div>
+
+    <ol class="how-it-works">
+      <li class="reveal"><span class="how-it-works__num">01</span><div><h4>Build</h4><p>You work with CyphrWeb and build real traction — product, users or early revenue.</p></div></li>
+      <li class="reveal"><span class="how-it-works__num">02</span><div><h4>Get Reviewed</h4><p>Our team and mentors look at where your startup stands and whether it's ready for investor conversations.</p></div></li>
+      <li class="reveal"><span class="how-it-works__num">03</span><div><h4>Warm Introduction</h4><p>If there's a genuine fit, we introduce you to relevant angel investors in our network.</p></div></li>
+      <li class="reveal"><span class="how-it-works__num">04</span><div><h4>Your Conversation</h4><p>From there, the conversation and any decision to invest is between you and the investor.</p></div></li>
+    </ol>
+
+    <p class="fineprint investors-note">An introduction is a warm connection to the right people, not a promise — CyphrWeb does not guarantee funding or any specific outcome.</p>
+  </div>
+</section>
+
+<!-- ============ 8. WHO CAN WORK WITH CYPHRWEB ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section__head">
+      <h2>Wherever you are in your journey.</h2>
+    </div>
+
+    <div class="grid-3">
+      <div class="card"><h3>Idea Stage</h3><p>You have an idea and want to explore its potential.</p></div>
+      <div class="card"><h3>Early Stage</h3><p>You have started building and need direction.</p></div>
+      <div class="card"><h3>MVP Stage</h3><p>Your product exists and you want users and traction.</p></div>
+      <div class="card"><h3>Revenue Stage</h3><p>You have customers and want to grow.</p></div>
+      <div class="card"><h3>Scaling Stage</h3><p>You want to expand your business.</p></div>
+      <div class="card"><h3>No Idea Yet</h3><p>You want to build something but haven't found the right idea yet.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8b. MEET THE EXPERTS ============ -->
+<section class="section section--alt" id="experts">
+  <div class="container">
+    <div class="section__head">
+      <h2>Meet the Experts</h2>
+      <p class="section__lede">Experienced people across every function, ready to help CyphrWeb's startups where it matters most.</p>
+    </div>
+
+    <div class="expert-grid" id="expertGrid"><noscript><p class="fineprint">Our experts come from Microsoft, BMW Techworks, Tata Motors and Capgemini. Enable JavaScript to see their profiles.</p></noscript></div>
+
+    <h3 class="expert-areas-heading">Areas they cover</h3>
+    <div class="grid-3">
+      <div class="card"><h3>Technology</h3><p>Architecture, product engineering and technical decisions.</p></div>
+      <div class="card"><h3>Marketing</h3><p>Positioning, growth channels and brand.</p></div>
+      <div class="card"><h3>Business</h3><p>Strategy, operations and business modeling.</p></div>
+      <div class="card"><h3>Product</h3><p>Product direction, UX and roadmap decisions.</p></div>
+      <div class="card"><h3>Finance</h3><p>Financial planning, fundraising basics and unit economics.</p></div>
+      <div class="card"><h3>Legal</h3><p>Compliance, contracts and early-stage legal questions.</p></div>
+      <div class="card"><h3>Industry</h3><p>Domain-specific guidance from people who've worked in your space.</p></div>
+    </div>
+
+    <div class="experts-cta reveal">
+      <a href="https://chat.whatsapp.com/FMRIkeHuOK45pKjLTabjZZ" target="_blank" rel="noopener" class="btn btn--primary">Apply as an Expert</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. HOW IT WORKS ============ -->
+<section class="section section--alt" id="apply">
+  <div class="container">
+    <div class="section__head">
+      <h2>Your journey with CyphrWeb</h2>
+    </div>
+
+    <ol class="how-it-works">
+      <li class="reveal"><span class="how-it-works__num">01</span><div><h4>Join</h4><p>Become part of the community.</p></div></li>
+      <li class="reveal"><span class="how-it-works__num">02</span><div><h4>Explore</h4><p>Meet people, ideas and opportunities.</p></div></li>
+      <li class="reveal"><span class="how-it-works__num">03</span><div><h4>Build</h4><p>Find a problem, form a team and start building.</p></div></li>
+      <li class="reveal"><span class="how-it-works__num">04</span><div><h4>Apply</h4><p>Founders and startups can apply for CyphrWeb partnership.</p></div></li>
+      <li class="reveal"><span class="how-it-works__num">05</span><div><h4>Partner</h4><p>Selected startups enter an agreed growth partnership.</p></div></li>
+      <li class="reveal"><span class="how-it-works__num">06</span><div><h4>Grow</h4><p>CyphrWeb supports relevant areas of execution and growth.</p></div></li>
+    </ol>
+
+    <div class="apply-cta reveal">
+      <a href="https://chat.whatsapp.com/FMRIkeHuOK45pKjLTabjZZ" target="_blank" rel="noopener" class="btn btn--primary">Apply as a Startup</a>
+      <p class="fineprint">Applying starts a conversation in the community — no fees.</p>
+    </div>
+
+    <div class="apply-form-wrap" id="startup-form">
+      <h3 class="apply-form__heading">Startup Application Form</h3>
+      <p class="section__lede">Prefer to share details upfront? Fill this in and we'll follow up in the community.</p>
+
+      <form class="apply-form" id="startupForm" novalidate>
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="form-row form-row--split">
+          <div>
+            <label for="sf-startup">Startup name</label>
+            <input type="text" id="sf-startup" name="startup" required>
+          </div>
+          <div>
+            <label for="sf-name">Your name</label>
+            <input type="text" id="sf-name" name="name" required autocomplete="name">
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="sf-stage">Current stage</label>
+          <select id="sf-stage" name="stage" required>
+            <option value="" disabled selected>Select a stage</option>
+            <option>Idea Stage</option>
+            <option>Early Stage</option>
+            <option>MVP Stage</option>
+            <option>Revenue Stage</option>
+            <option>Scaling Stage</option>
+            <option>No Idea Yet</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="sf-pitch">One line about what you're building</label>
+          <textarea id="sf-pitch" name="pitch" rows="2" placeholder="Keep it high-level — no need to share full details here." maxlength="160" required></textarea>
+        </div>
+        <div class="form-row">
+          <label for="sf-contact">Contact (email or phone)</label>
+          <input type="text" id="sf-contact" name="contact" required autocomplete="email" placeholder="you@email.com or +91 98765 43210">
+        </div>
+        <button type="submit" class="btn btn--primary">Submit Application</button>
+        <p class="form-note" id="startupFormNote" role="status"></p>
+        <p class="fineprint">Applications stay private to the CyphrWeb team — nothing here is shown publicly.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10. STARTUP DIRECTORY ============ -->
+<section class="section" id="directory">
+  <div class="container">
+    <div class="section__head">
+      <h2>Startups building with CyphrWeb</h2>
+      <p class="section__lede">A running list of teams in the ecosystem — who they are and how they started. What they're actually building stays private to the team.</p>
+    </div>
+
+    <div class="grid-3" id="directoryGrid"><noscript><p class="fineprint">Enable JavaScript to view the startup directory.</p></noscript></div>
+
+    <div class="portfolio-empty reveal" id="directoryEmpty">
+      <p>Startup profiles are being added to the directory — they'll appear here soon.</p>
+      <p class="portfolio-empty__cta">Want to be listed here?</p>
+      <a href="#startup-form" class="btn btn--primary">Apply as a Startup</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10a. PRODUCTS ECOSYSTEM ("Built by CyphrWeb") ============ -->
+<section class="section products" id="products">
+  <div class="container">
+    <div class="section__head products__head reveal">
+      <span class="products__eyebrow">CyphrWeb Products Ecosystem</span>
+      <h2>Built by CyphrWeb</h2>
+      <p class="section__lede">Ideas transformed into products, platforms and real-world solutions.</p>
+      <p class="products__sub">Explore the startups and products being built by the CyphrWeb community.</p>
+    </div>
+
+    <div class="pfeatured" id="productFeatured" aria-live="polite"></div>
+
+    <div class="ptoolbar">
+      <div class="pfilters" id="productFilters" role="tablist" aria-label="Filter products by category"></div>
+      <label class="psearch">
+        <span class="sr-only">Search products or founders</span>
+        <input type="search" id="productSearch" placeholder="Search products or founders" autocomplete="off">
+      </label>
+    </div>
+
+    <div class="pgrid" id="productGrid"><noscript><p class="fineprint">Enable JavaScript to browse the products built by the CyphrWeb community.</p></noscript></div>
+
+    <div class="pempty" id="productEmpty" hidden>
+      <p>No products in this category yet.</p>
+      <p class="fineprint">Building something? Apply and join the ecosystem.</p>
+      <a href="#startup-form" class="btn btn--primary">Apply as a Startup</a>
+    </div>
+
+    <div class="pmore"><button type="button" class="btn btn--ghost" id="productMore" hidden>Show more products</button></div>
+  </div>
+</section>
+
+<!-- ============ 10b. TESTIMONIALS ============ -->
+<section class="section section--alt" id="testimonials">
+  <div class="container">
+    <div class="section__head">
+      <h2>What people say about CyphrWeb.</h2>
+      <p class="section__lede">In the words of founders, mentors and community members who've actually worked with us.</p>
+    </div>
+
+    <div class="grid-3" id="testimonialsGrid"></div>
+
+    <div class="portfolio-empty reveal" id="testimonialsEmpty">
+      <p>We're collecting stories from our community right now.</p>
+      <p class="portfolio-empty__cta">Worked with CyphrWeb? We'd love to hear from you.</p>
+      <a href="https://chat.whatsapp.com/FMRIkeHuOK45pKjLTabjZZ" target="_blank" rel="noopener" class="btn btn--primary">Share Your Story</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11. EVENTS + OPPORTUNITIES ============ -->
+<section class="section section--alt" id="events">
+  <div class="container">
+    <div class="section__head">
+      <h2>Events, Internships &amp; Opportunities</h2>
+      <p class="section__lede">Events, internships, hackathons, competitions and startup opportunities across the CyphrWeb community. Tap a hackathon card to open its live website right here, fully working.</p>
+    </div>
+
+    <div class="events-filters" id="eventsFilters" role="tablist" aria-label="Filter opportunities">
+      <button class="events-filters__tab is-active" type="button" data-filter="all" role="tab" aria-selected="true">All</button>
+      <button class="events-filters__tab" type="button" data-filter="Event" role="tab" aria-selected="false">Events</button>
+      <button class="events-filters__tab" type="button" data-filter="Internship" role="tab" aria-selected="false">Internships</button>
+      <button class="events-filters__tab" type="button" data-filter="Hackathon" role="tab" aria-selected="false">Hackathons</button>
+      <button class="events-filters__tab" type="button" data-filter="Competition" role="tab" aria-selected="false">Competitions</button>
+      <button class="events-filters__tab" type="button" data-filter="Opportunity" role="tab" aria-selected="false">Startup Opportunities</button>
+    </div>
+
+    <div class="grid-3" id="eventsGrid"></div>
+
+
+    <div class="stage" id="stage" aria-label="Live hackathon websites">
+      <div class="stage__bar">
+        <div class="stage__tabs" role="tablist" aria-label="Choose a hackathon site"></div>
+        <div class="stage__actions">
+          <button type="button" data-act="reload">Reload</button>
+          <a data-act="open" href="#" target="_blank" rel="noopener">New tab</a>
+          <button type="button" data-act="expand" aria-pressed="false">Full screen</button>
+        </div>
+      </div>
+      <div class="stage__url" aria-hidden="true"></div>
+      <div class="stage__view">
+        <iframe title="Hackathon website" allow="clipboard-write; fullscreen; payment" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="stage__loader" aria-hidden="true"><span></span>Loading the live site…</div>
+        <p class="stage__slow" hidden>Taking longer than usual. Use <b>Reload</b> or <b>New tab</b>.</p>
+      </div>
+    </div>
+
+    <div class="portfolio-empty reveal" id="eventsEmpty">
+      <p>Nothing in this category right now.</p>
+      <p class="portfolio-empty__cta">Join the community to hear about the next one first.</p>
+      <a href="https://chat.whatsapp.com/FMRIkeHuOK45pKjLTabjZZ" target="_blank" rel="noopener" class="btn btn--primary">Join Community</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11b. GROWTH DASHBOARD (FUTURE) ============ -->
+<section class="section" id="dashboard-preview">
+  <div class="container">
+    <div class="section__head">
+      <h2>Startup Growth Dashboard</h2>
+      <span class="highlight">Coming soon — for partnered startups</span>
+      <p class="section__lede">Once you're partnered with CyphrWeb, a private login will give your team one place to track everything — not public on this website, built just for startups in the ecosystem.</p>
+    </div>
+
+    <ul class="tag-grid reveal" aria-label="Planned dashboard features">
+      <li>Current stage</li>
+      <li>Tasks</li>
+      <li>Milestones</li>
+      <li>Development progress</li>
+      <li>Marketing progress</li>
+      <li>Growth metrics</li>
+      <li>Expert sessions</li>
+      <li>Investor introductions</li>
+      <li>Documents</li>
+      <li>CyphrWeb support</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 12. CAREERS ============ -->
+<section class="section" id="careers">
+  <div class="container">
+    <div class="section__head">
+      <h2>Build CyphrWeb with us.</h2>
+      <p class="section__lede">CyphrWeb is community-run and growing. These are the areas where we're actively looking for people to get involved — not formal job postings, but real ways to contribute and grow with us.</p>
+    </div>
+
+    <div class="grid-3" id="careersGrid"><noscript><p class="fineprint">Open areas: Content &amp; Community, Tech &amp; Product, Design, Partnerships, Events &amp; Operations, Growth &amp; Marketing. <a href="https://chat.whatsapp.com/FMRIkeHuOK45pKjLTabjZZ" target="_blank" rel="noopener">Reach out in the community</a>.</p></noscript></div>
+
+    <div class="talent-form-wrap" id="talent">
+      <h3 class="apply-form__heading">Join CyphrWeb — Talent Registration</h3>
+      <p class="section__lede">Register independently as a Developer, Marketer, Designer or MBA Student and we'll match you to the right team.</p>
+
+      <div class="find-team__tabs talent-tabs" role="tablist" aria-label="Registration type">
+        <button class="find-team__tab is-active" type="button" data-role="Developer" role="tab" aria-selected="true">Developer</button>
+        <button class="find-team__tab" type="button" data-role="Marketer" role="tab" aria-selected="false">Marketer</button>
+        <button class="find-team__tab" type="button" data-role="Designer" role="tab" aria-selected="false">Designer</button>
+        <button class="find-team__tab" type="button" data-role="MBA Student" role="tab" aria-selected="false">MBA Student</button>
+      </div>
+
+      <form class="apply-form" id="talentForm" novalidate>
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="form-row form-row--split">
+          <div>
+            <label for="tl-name">Your name</label>
+            <input type="text" id="tl-name" name="name" required autocomplete="name">
+          </div>
+          <div>
+            <label for="tl-skills">Your skills / interest area</label>
+            <input type="text" id="tl-skills" name="skills" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="tl-pitch">A line about yourself</label>
+          <textarea id="tl-pitch" name="pitch" rows="2" maxlength="160"></textarea>
+        </div>
+        <div class="form-row">
+          <label for="tl-contact">Contact (email or phone)</label>
+          <input type="text" id="tl-contact" name="contact" required autocomplete="email" placeholder="you@email.com or +91 98765 43210">
+        </div>
+        <button type="submit" class="btn btn--primary">Register</button>
+        <p class="form-note" id="talentFormNote" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 13. STARTUP PORTFOLIO / NO IDEA BANNER ============ -->
+<section class="section section--alt">
+  <div class="container no-idea">
+    <h2>Don't have a startup idea yet?</h2>
+    <p>That's completely fine — most people who join CyphrWeb don't either. Come in to learn, meet people and explore problems worth solving. The idea can come later.</p>
+    <a href="https://chat.whatsapp.com/FMRIkeHuOK45pKjLTabjZZ" target="_blank" rel="noopener" class="btn btn--ghost">Join the Community</a>
+  </div>
+</section>
+
+<!-- ============ 14. ABOUT / VISION ============ -->
+<section class="section" id="vision">
+  <div class="container">
+    <div class="vision__intro">
+      <h2>Building the ecosystem behind tomorrow's startups.</h2>
+      <p>CyphrWeb exists to connect the people, knowledge and opportunities that turn ideas into products, and products into companies. It's a long-term bet on community, collaboration, entrepreneurship, technology and growth — built one relationship at a time.</p>
+    </div>
+
+    <div class="vision__team-head">
+      <h3>The people building CyphrWeb.</h3>
+      <p class="section__lede">Vision, execution and everything in between — led by a founding team that's actively in the work, not just guiding it from the side.</p>
+    </div>
+
+    <div class="leadership-grid" id="leadershipGrid">
+      <div class="leader-card reveal">
+        <figure class="person-photo">
+          <img src="tejas.png" alt="Tejas Naiknaware, Founder of CyphrWeb" width="460" height="460" loading="lazy" data-initials="TN">
+        </figure>
+        <div class="leader-card__head">
+          <h3>Tejas Naiknaware</h3>
+          <span class="leader-card__role">Founder of CyphrWeb</span>
+        </div>
+        <p class="leader-card__quote">"A vision without execution is just imagination. At CyphrWeb, we turn ideas into impactful realities and build solutions that matter."</p>
+        <ul class="leader-card__list">
+          <li><strong>Founder, CyphrWeb</strong> — Building a platform that empowers ideas, connects talent, and creates impact.</li>
+          <li><strong>Visionary Leader</strong> — Passionate about innovation, technology and creating scalable solutions.</li>
+          <li><strong>Focused on Impact</strong> — Committed to long-term value, quality and meaningful change.</li>
+        </ul>
+        <p class="leader-card__focus-label">Focus areas</p>
+        <ul class="tag-grid leader-card__tags" aria-label="Tejas's focus areas">
+          <li>Product Innovation</li>
+          <li>Team &amp; Culture</li>
+          <li>Scalability</li>
+          <li>Sustainable Impact</li>
+        </ul>
+        <div class="stat-grid leader-card__stats">
+          <div class="stat"><span class="stat__num">10+</span><span class="stat__label">Technical events</span></div>
+          <div class="stat"><span class="stat__num">10+</span><span class="stat__label">Non-technical events</span></div>
+          <div class="stat"><span class="stat__num">1000+</span><span class="stat__label">Students impacted</span></div>
+        </div>
+      </div>
+
+      <div class="leader-card reveal">
+        <figure class="person-photo">
+          <img src="sandesh.png" alt="Sandesh Shingankar, Co-Founder and COO of CyphrWeb" width="460" height="460" loading="lazy" data-initials="SS">
+        </figure>
+        <div class="leader-card__head">
+          <h3>Sandesh Shingankar</h3>
+          <span class="leader-card__role">Co-Founder &amp; COO of CyphrWeb</span>
+        </div>
+        <p class="leader-card__quote">"Together, we're building CyphrWeb — a platform that empowers ideas, connects talent, and creates impact."</p>
+        <ul class="leader-card__list">
+          <li><strong>Co-Founder &amp; COO</strong> — Oversees operations, strategy &amp; overall growth of CyphrWeb.</li>
+          <li><strong>Mentor, CyphrWeb Hackathon</strong> — Guiding and empowering young minds to build, learn and grow.</li>
+          <li><strong>Lead Organizer, CyphrWeb Hackathon</strong> — Leads the vision and execution of CyphrWeb Hackathon.</li>
+          <li><strong>Event Head, IIC – NMIET</strong> — Driving innovation &amp; entrepreneurship initiatives at the institution.</li>
+          <li><strong>Committee Member, Sara Kasturi Society</strong> — Actively contributing towards community development &amp; engagement.</li>
+        </ul>
+        <div class="stat-grid leader-card__stats">
+          <div class="stat"><span class="stat__num">10+</span><span class="stat__label">Technical events</span></div>
+          <div class="stat"><span class="stat__num">10+</span><span class="stat__label">Non-technical events</span></div>
+          <div class="stat"><span class="stat__num">1000+</span><span class="stat__label">Students impacted</span></div>
+        </div>
+      </div>
+
+      <!-- To add more team members later, copy one .leader-card block above,
+           swap in their name/role/bullets, and drop the stat-grid + tags if
+           not applicable — this container flexes to fit any number of cards. -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ 14b. OUR IMPACT ============ -->
+<section class="section section--alt" id="impact">
+  <div class="container">
+    <div class="section__head">
+      <h2>CyphrWeb in numbers.</h2>
+    </div>
+
+    <div class="stat-grid impact-grid">
+      <div class="stat">
+        <span class="stat__num" data-stat="community">300+</span>
+        <span class="stat__label">Community members</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-stat="startups">10+</span>
+        <span class="stat__label">Startups supported</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-stat="mentors">20+</span>
+        <span class="stat__label">Experts</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-stat="devs">10+</span>
+        <span class="stat__label">Developers</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-stat="cwEvents">2+</span>
+        <span class="stat__label">CyphrWeb-hosted events</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 14c. FAQ ============ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section__head">
+      <h2>Frequently asked questions.</h2>
+      <p class="section__lede">The questions we get asked most in the community — answered upfront.</p>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Do I need a startup idea to join CyphrWeb?</summary>
+        <p>No. Most people who join don't have one yet. Come in to learn, meet people and explore problems worth solving — the idea can come later.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is joining the CyphrWeb community free?</summary>
+        <p>Yes, joining the community is free. If CyphrWeb becomes a long-term growth partner for your startup, terms are discussed and agreed individually with your founding team — nothing is fixed upfront.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What does a CyphrWeb startup partnership actually involve?</summary>
+        <p>For startups we work closely with, CyphrWeb contributes expertise, resources, network, technology and marketing support in exchange for a fair, mutually agreed stake in what we help build. Every partnership is discussed individually — there's no obligation until both sides are comfortable moving forward.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How do I get matched with a co-founder or team?</summary>
+        <p>Use the "Find a team for your startup" section to register as a founder looking for a co-founder, or as someone who wants to join a team. Share your listing in the community group so more people can see it.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How does an investor introduction work?</summary>
+        <p>Once you're working with CyphrWeb and have built real traction, our team and mentors review whether you're ready for investor conversations. If there's a genuine fit, we make a warm introduction to relevant angel investors — the conversation and any decision from there is between you and the investor.</p>
+      </details>
+      <details class="faq-item">
+        <summary>I'm a developer, marketer or designer — can I join without a startup?</summary>
+        <p>Yes. Use the Talent Registration form in the Careers section to register independently, and we'll match you to the right team.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 15. FINAL CTA ============ -->
+<section class="section final-cta">
+  <div class="container final-cta__inner reveal">
+    <h2>Your journey can start before your idea does.</h2>
+    <p>You don't need to have everything figured out. Join the community, meet the right people, explore opportunities and start building.</p>
+    <div class="hero__actions">
+      <a href="https://chat.whatsapp.com/FMRIkeHuOK45pKjLTabjZZ" target="_blank" rel="noopener" class="btn btn--primary">Join Community</a>
+      <a href="#startup-form" class="btn btn--ghost">Apply as a Startup</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ 16. FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <p class="footer__logo"><img src="cyphrweb-mark.png" alt="" class="footer__logo-mark">CyphrWeb</p>
+      <p class="footer__desc">A startup community and growth ecosystem built to connect, create and grow.</p>
+    </div>
+
+    <nav class="footer__links" aria-label="Footer">
+      <a href="#top">Home</a>
+      <a href="#community">Community</a>
+      <a href="#directory">Directory</a>
+      <a href="#products">Products</a>
+      <a href="#events">Events</a>
+      <a href="#careers">Careers</a>
+      <a href="https://chat.whatsapp.com/FMRIkeHuOK45pKjLTabjZZ" target="_blank" rel="noopener">Join Community</a>
+    </nav>
+
+    <!-- Social links are hidden until real URLs exist. To enable: replace each "#" with the real
+         profile URL, then remove the comment markers around this block (and add the URLs to "sameAs" in the JSON-LD above).
+    <div class="footer__social" aria-label="Social links">
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      <a href="#" aria-label="YouTube">YouTube</a>
+      <a href="#" aria-label="X">X</a>
+    </div>
+    -->
+
+    <div class="footer__newsletter">
+      <p class="footer__newsletter-heading">Get updates in your inbox</p>
+      <p class="footer__newsletter-desc">Occasional news on events, hackathons and opportunities. No spam.</p>
+      <form class="newsletter-form" id="newsletterForm" novalidate>
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="email" id="nl-email" name="email" placeholder="you@email.com" required aria-label="Email address">
+        <button type="submit" class="btn btn--primary">Subscribe</button>
+      </form>
+      <p class="form-note" id="newsletterFormNote" role="status"></p>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <p>© 2026 CyphrWeb. All rights reserved.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<!-- ============ MODAL (reused for offers / directory / events) ============ -->
+<div class="modal" id="modal" hidden>
+  <div class="modal__backdrop" id="modalBackdrop"></div>
+  <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
+    <button class="modal__close" id="modalClose" aria-label="Close">✕</button>
+    <div class="modal__body" id="modalBody"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script src="enhance.js"></script>
+</body>
+</html>
